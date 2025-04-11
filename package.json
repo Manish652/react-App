@@ -1,14 +1,18 @@
 {
+  "homepage": "https://Manish652.github.io/react-App",
   "name": "myweb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@react-three/drei": "^10.0.4",
